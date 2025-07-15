@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+     
+
+</head>
+<body>
+        <header>
+        <div class="container">
+            <div class="top-header">
+                <div class="search-wrapper">
+                    <i class="bx bx-search" aria-hidden="true"></i>
+                    <input type="text" class="search-input" placeholder="Search..." aria-label="Search intranet content">
+                </div>
+                <div class="header-right">
+                    <a href="#" class="notification-icon" aria-label="Notifications (3 new)">
+                        <i class="bx bxs-bell" aria-hidden="true"></i>
+                        <span class="notification-badge" aria-hidden="true">3</span>
+                    </a>
+                    <div class="user-info">
+                        <a href="#" class="user-avater" aria-label="User Profile: Jane Doe">
+                            <img src="assets/image/img (2).jpg" alt="Profile photo of Jane Doe" class="user-img">
+                        </a>
+                        <h3 aria-label="Logged in as Jane Doe">Jane Doe</h3>
+                    </div>
+                    <button id="modeToggle" aria-label="Toggle dark mode" class="toggle-bg">
+                        <i class="bx bx-moon mode" aria-hidden="true"></i>
+                        <span class="sr-only">Toggle Dark Mode</span>
+                    </button>
+                
+                        <button  id="menu-toggle"  class="toggle-menu" aria-expanded="false" aria-controls="main-navigation" >
+                            <i class="bx bx-menu" aria-hidden="true"></i>
+                            <span class="sr-only">Open Mobile Navigation</span>
+                        </button>
+                  
+                </div>
+            </div>
+            <div class="side-bar" id="sidebar" role="navigation" aria-label="Main navigation">
+              
+                        <button id="menu-close"  class="close-menu" aria-expanded="false" aria-controls="main-navigation" >
+                            <i class="bx bx-x" aria-hidden="true"></i>
+                            <span class="sr-only">close Mobile Navigation</span>
+                        </button>  
+              <div class="logo">
+                    <img src="assets/image/logo1.png" alt="CoreSync Logo">
+                </div>
+                <nav class="nav" id="main-navigation">
+                    <ul class="nav-container">
+                        <li class="nav-list"><a href="#workplace" class="nav-link" aria-label="My Workspace"><i class="bx bxs-home"></i>My Workspace</a></li>
+                        <li class="nav-list"><a href="#inbox" class="nav-link" aria-label="Inbox"><i class="bx bxs-envelope"></i>Inbox</a></li>
+                        <li class="nav-list"><a href="#announcements" class="nav-link" aria-label="Company Announcements"><i class="bx bxs-megaphone"></i>Announcements</a></li>
+                        <li class="nav-list"><a href="#events" class="nav-link" aria-label="Events"><i class="bx bxs-news"></i>Events</a></li>
+                        <li class="nav-list"><a href="#team" class="nav-link" aria-label="Team"><i class="bx bxs-group"></i>Team</a></li>
+                        <li class="nav-list"><a href="#metrics" class="nav-link" aria-label="Company Metrics"><i class="bx bxs-bar-chart-alt-2"></i>Company Metrics</a></li>
+                        <li class="nav-list"><a href="#faq" class="nav-link" aria-label="Frequently Asked Questions"><i class="bx bxs-help-circle"></i>Faq</a></li>
+                        <li class="nav-list"><a href="#settings" class="nav-link" aria-label="Settings"><i class="bx bxs-cog"></i>Settings</a></li>
+                        <li class="nav-list"><a href="#" class="nav-link" aria-label="Log Out"><i class="bx bxs-log-out"></i>Log Out</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+
+<!-- Main site -->
+ <main class="main-site" role="main" id="main">
+  <!-- MY WORKSPACE SECTION -->
+  <section class="my-workspace" aria-labelledby="workspace-heading" id="workplace">
+    <div class="container">
+      <h2 class="heading" id="workspace-heading">
+        <i class="bx bx-building"></i>
+        My Workspace</h2>
+      <div class="welcome-message">
+        <h2 class="hand-icon">👋</h2>
+        <div class="message">
+          <h3>Good Morning, Jane Doe!</h3>
+          <p>Welcome to your Intranet Hub. Here's a quick overview of your day.</p>
+        </div>
+      </div>
+      <div class="workspace-widgets">
+        <section class="widget-meeting card" aria-labelledby="tasks-heading">
+          <h3 class="subheading" id="tasks-heading">
+            <i class="bx bx-file" aria-hidden="true"></i>Tasks
+          </h3>
+          <ul>
+            <li>
+              <strong>10:00 AM </strong> Project Alpha Standup
+              <span class="meeting-location">(Conference Room 1)</span>
+            </li>
+            <li>
+              <strong>02:00 PM </strong> Marketing Strategy Review
+              <span class="meeting-location">(Zoom)</span>
+            </li>
+          </ul>
+          <a href="#" class="view-links" aria-label="View Full Calendar">View Full Calendar &rarr;</a>
+        </section>
+
+        <section class="widget-my-links card" aria-labelledby="quick-access-heading">
+          <h3 class="subheading" id="quick-access-heading">
+            <i class="bx bx-link-external" aria-hidden="true"></i>My Quick Access
+          </h3>
+          <ul>
+            <li><a href="#">HR Portal</a></li>
+            <li><a href="#">IT Helpdesk</a></li>
+            <li><a href="#">Submit Leave Request</a></li>
+          </ul>
+        </section>
+
+        <section class="widget-tasks card" aria-labelledby="pending-tasks-heading">
+          <h3 class="subheading" id="pending-tasks-heading">
+            <i class="bx bx-loader-circle" aria-hidden="true"></i>Pending Tasks
+          </h3>
+          <ul>
+            <li class="task-item">Review Q3 Sales Report
+              <span class="task-due"><b>Due: July 15</b></span>
+            </li>
+            <li class="task-item">Submit Expense Report
+              <span class="task-due"><b>Due: July 25</b></span>
+            </li>
+          </ul>
+          <a href="#" class="view-links" aria-label="View All Tasks">View All Tasks &rarr;</a>
+        </section>
+
+        <section class="widget-notifications card" aria-labelledby="recent-notifications-heading">
+          <h3 class="subheading" id="recent-notifications-heading">
+            <i class="bx bx-bell" aria-hidden="true"></i>Recent Notifications
+          </h3>
+          <ul>
+            <li class="notification-item">HR Policy Update: Remote Work Guidelines</li>
+            <li class="notification-item">Your leave request for Jul 10-15 has been approved.</li>
+          </ul>
+          <a href="#" class="view-links" aria-label="View All Notifications">View All Notifications &rarr;</a>
+        </section>
+      </div>
+    </div>
+  </section>
+  <!-- INBOX SECTION -->
+
+
+  <section class="inbox-section " aria-labelledby="inbox-heading" id="inbox">
+  <div class="container">
+    <h2 class="heading" id="inbox-heading">
+    <i class='bx bx-envelope'></i> Inbox
+  </h2>
+
+  <div class="inbox-wrapper">
+    <article class="inbox-card unread card">
+      <h3 class="subject">🎯 Marketing Strategy Review</h3>
+      <p class="from">From: Sarah Williams</p>
+      <p class="preview">Let’s finalize the Q3 plans before Friday’s sync meeting...</p>
+      <span class="time">2 hrs ago</span>
+    </article>
+
+    <article class="inbox-card card">
+      <h3 class="subject">📢 Team Standup Recap</h3>
+      <p class="from">From: Alex Johnson</p>
+      <p class="preview">Thanks everyone for today’s insights. Attached are the action points.</p>
+      <span class="time">Yesterday</span>
+    </article>
+
+    <article class="inbox-card card">
+      <h3 class="subject">🔧 IT Maintenance Alert</h3>
+      <p class="from">From: IT Desk</p>
+      <p class="preview">System updates scheduled for Sunday midnight. Expect 30 mins downtime.</p>
+      <span class="time">2 days ago</span>
+    </article>
+  </div>
+  </div>
+</section>
+
+
+  <!--  ARTICLE -->
+  <article class="side-section" aria-label="Company News and Events">
+    <!-- ANNOUNCEMENTS SECTION -->
+    <section class="announcements card" aria-labelledby="announcements-heading" id="announcements">
+      <div class="container">
+        <h2 class="heading" id="announcements-heading">
+        
+          <i class="bx bxs-megaphone"></i> Company Announcements
+        </h2>
+        <div class="announcement-list">
+          <article class="card" aria-label="Announcement: Picnic Date Change">
+            <h3 class="title">Important: Annual Company Picnic Date Change</h3>
+            <p class="announcement-meta">Posted by HR Department on July 8, 2025</p>
+            <p class="announcement-excerpt">Due to unforeseen circumstances, the annual company picnic originally scheduled for August 15th has been moved to August 22nd. We apologise for any inconvenience...</p>
+            <a href="#" class="read-more">Read More &rarr;</a>
+          </article>
+          <article class="card" aria-label="Announcement: Q2 Revenue Update">
+            <h3 class="title">Q2 Revenue Exceeds Expectations!</h3>
+            <p class="announcement-excerpt">Thanks to everyone's hard work, our Q2 revenue figures have surpassed targets! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis voluptate numquam iusto. Accusamus, facere quisquam....</p>
+            <a href="#" class="read-more">Read more &rarr;</a>
+          </article>
+          <a href="#" class="view-all-button btn" aria-label="View All Announcements">
+            View All Announcements
+            <i class="bx bx-right-arrow-alt"></i>
+            </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENTS SECTION -->
+    <section class="events card" aria-labelledby="events-heading" id="events">
+      <div class="container">
+        <h2 class="heading" id="events-heading">
+          <i class='bx bxs-calendar-alt' aria-hidden="true"></i>Upcoming Events
+        </h2>
+        <div class="event-list">
+          <article class="event-card" aria-label="Event: AI in the workplace">
+            <div class="event-date">
+              <span>15 Jul 2025</span>
+              <span class="event-time">12:00 PM - 01:00 PM</span>
+            </div>
+            <div class="event-details">
+              <h3 class="event-title">Lunch and Learn: "AI in the workplace"</h3>
+              <p class="event-location">Online (Google Meet)</p>
+              <a href="#" class="register-link">Register Now &rarr;</a>
+            </div>
+          </article>
+          <article class="event-card" aria-label="Event: Coresync Blood Drive">
+            <div class="event-date">
+              <span>25 Jul 2025</span>
+              <span class="event-time">09:00 AM - 04:00 PM</span>
+            </div>
+            <div class="event-details">
+              <h3 class="event-title">Coresync Blood Drive</h3>
+              <p class="event-location">Company Auditorium</p>
+              <a href="#" class="register-link">Sign Up &rarr;</a>
+            </div>
+          </article>
+          <article class="event-card" aria-label="Event: Annual Summer Party">
+            <div class="event-date">
+              <span>05 Aug 2025</span>
+              <span class="event-time">06:00 PM - Onwards</span>
+            </div>
+            <div class="event-details">
+              <h3 class="event-title">Annual Summer Party!</h3>
+              <p class="event-location">Local Park Pavilion</p>
+              <a href="#" class="register-link">RSVP by Jul 30 &rarr;</a>
+            </div>
+          </article>
+          <a href="#" class="view-all-button btn" aria-label="View All Events Calendar">View All Events Calendar 
+            
+            <i class="bx bx-right-arrow-alt"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+  </article>
+
+  <!-- team -->
+   <section id="team"  class="team-spotlight" aria-labelledby="team-members-section">
+    <div class="container">
+      <h2 class="heading">
+        <i class="bx bx-group"></i>
+        Our Teams</h2>
+      <div class="spotlights-card">
+        <div class="team-member-card card">
+          <div class="member-image">
+            <img src="assets/image/img (1).jpg" alt="team-member-image1">
+          </div>
+            <div class="user-profile">
+              <h3 class="member-name">Jane Doe</h3>
+              <p class="member-role">Senior Web developer</p>
+              <p class="fun-fact">Hiking</p>
+              <a href="#" class="view-profile">View Profile &rarr;</a>
+            </div>
+        </div>
+         <div class="team-member-card card">
+          <div class="member-image">
+            <img src="assets/image/img (2).jpg" alt="team-member-image2">
+          </div>
+            <div class="user-profile">
+              <h3 class="member-name">Jane Danny</h3>
+              <p class="member-role">Junior Web developer</p>
+              <p class="fun-fact">Coding</p>
+              <a href="#" class="view-profile">View Profile &rarr;</a>
+            </div>
+        </div>
+       
+         <div class="team-member-card card">
+          <div class="member-image">
+            <img src="assets/image/img (3).jpg" alt="team-member-image3">
+          </div>
+            <div class="user-profile">
+              <h3 class="member-name">John Ray</h3>
+              <p class="member-role"> product designer </p>
+              <p class="fun-fact">reading</p>
+              <a href="#" class="view-profile">View Profile &rarr;</a>
+            </div>
+        </div>
+        
+      </div>
+      <a href="#" class="view-all-button btn">View Company Directory</a>
+    
+    </div>
+   </section>
+   <!-- COMPANY METRICS EXPANDED -->
+    <section class="company-metrics" aria-labelledby="company-metrics" id="metrics">
+      <div class="container">
+      <h2 class="heading"><i class='bx bx-bar-chart-alt-2'></i>Company Metrics</h2>
+      <div class="metric-grid">
+        <div class="metric-card card">
+          <h4><i class='bx bx-dollar-circle'></i> Total Revenue</h4>
+          <p>$7.8M - up 12% from Q1</p>
+        </div>
+        <div class="metric-card">
+          <h4><i class='bx bx-group'></i> Monthly Active Users</h4>
+          <p>1.7M users — strong adoption</p>
+        </div>
+        <div class="metric-card card">
+          <h4><i class='bx bx-smile'></i> CSAT</h4>
+          <p>92% positive feedback</p>
+        </div>
+        <div class="metric-card card">
+          <h4><i class='bx bx-support'></i> Support Tickets</h4>
+          <p>Avg. 1.5 hrs resolution</p>
+        </div>
+      </div>
+      </div>
+    </section>
+
+<!-- faq -->
+
+<section class="faq-section" aria-labelledby="faq-heading" id="faq">
+  <div class="container">
+    <h2 class="heading" id="faq-heading"><i class='bx bxs-help-circle' aria-hidden="true"></i>Frequently Asked Questions</h2>
+    
+    <div class="accordion"  role="tablist">
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false" aria-controls="faq1" id="faq1-label">
+          What is CoreSync?
+        </button>
+        <div class="accordion-content" id="faq1" role="region" aria-labelledby="faq1-label" hidden>
+          <p>CoreSync is your digital workplace for seamless collaboration, task management, announcements, and team updates.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false" aria-controls="faq2" id="faq2-label">
+          How can I submit a leave request?
+        </button>
+        <div class="accordion-content" id="faq2" role="region" aria-labelledby="faq2-label" hidden>
+          <p>You can submit a leave request through the Quick Access section or HR Portal.</p>
+        </div>
+      </div>
+
+      <div class="accordion-item">
+        <button class="accordion-header" aria-expanded="false" aria-controls="faq3" id="faq3-label">
+          Who do I contact for technical support?
+        </button>
+        <div class="accordion-content" id="faq3" role="region" aria-labelledby="faq3-label" hidden>
+          <p>Please contact the IT Helpdesk available in your Quick Access panel or via email.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- settings -->
+<section class="settings-section" id="settings" aria-labelledby="settings-heading">
+ <div class="container">
+        <h2 class="heading" id="settings-heading">
+    <i class='bx bx-cog'></i> Account Settings
+  </h2>
+  <div class="settings-wrapper">
+    <article class="settings-card card">
+      <h3 class="settings-title">🛡️ Security </h3>
+      <p class="settings-description">Update your password, enable 2FA, and manage authorized devices. Regular updates help keep your account safe.</p>
+      <a href="#" class="settings-link">Go to Security Settings &rarr;</a>
+    </article>
+
+    <article class="settings-card card">
+      <h3 class="settings-title">🌐 Preferences</h3>
+      <p class="settings-description">Customize your dashboard layout, enable dark mode, and set your preferred language and region.</p>
+      <a href="#" class="settings-link">Go to Preferences &rarr;</a>
+    </article>
+
+    <article class="settings-card card">
+      <h3 class="settings-title">📬 Notifications</h3>
+      <p class="settings-description">Choose how you receive notifications — email, in-app, or both. Set preferences for alerts on announcements, tasks, and updates.</p>
+      <a href="#" class="settings-link">Manage Notifications &rarr;</a>
+    </article>
+
+    <article class="settings-card card">
+      <h3 class="settings-title">👤 Profile Info</h3>
+      <p class="settings-description">Edit your name, job title, department, and profile picture. Keeping your profile updated helps colleagues know who you are.</p>
+      <a href="#" class="settings-link">Edit Profile &rarr;</a>
+    </article>
+  </div>
+  </div>
+
+</section>
+
+</main>
+
+ 
+<!-- FOOTER -->
+<footer class="site-footer" role="contentinfo" aria-label="Site Footer">
+  
+  <div class="container">
+    
+    <!-- About Section -->
+    <div class="footer-about" aria-labelledby="footer-about-title">
+      <h3 id="footer-about-title">Coresync</h3>
+      <p>
+        Your digital workplace for seamless collaboration and communication.
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui veritatis deserunt consequuntur expedita. Debitis, fugiat suscipit. Doloremque labore iste perspiciatis!
+      </p>
+    </div>
+
+    <!-- Key Links -->
+    <div class="footer-links" aria-labelledby="footer-links-title">
+      <h3 id="footer-links-title">Key Links</h3>
+      <ul class="nav-links">
+        <li class="nav-item">
+          <a href="#" class="link-item" title="Company Policies">
+            <i class="bx bx-file" aria-hidden="true"></i>Company Policies
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="link-item" title="Help Desk">
+            <i class="bx bx-support" aria-hidden="true"></i>Help Desk
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="link-item" title="Submit a Request">
+            <i class="bx bx-send" aria-hidden="true"></i>Submit a Request
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="link-item" title="Careers">
+            <i class="bx bx-briefcase" aria-hidden="true"></i>Careers
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="link-item" title="About Us">
+            <i class="bx bx-info-circle" aria-hidden="true"></i>About Us
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#" class="link-item" title="Privacy Policy">
+            <i class="bx bx-lock-alt" aria-hidden="true"></i>Privacy Policy
+          </a>
+        </li>
+      </ul>
+    </div>
+    
+    <!-- Social Media -->
+    <div class="footer-social" aria-labelledby="footer-social-title">
+      <h3 id="footer-social-title">Connect With Us</h3>
+      <ul>
+        <li>
+          <a href="#" class="nav-item" aria-label="Follow CoreSync on Twitter (X)" target="_blank" rel="noopener noreferrer">
+            <i class="bx bxl-twitter" aria-hidden="true"></i>
+            <span class="sr-only">Twitter</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-item" aria-label="Visit CoreSync on GitHub" target="_blank" rel="noopener noreferrer">
+            <i class="bx bxl-github" aria-hidden="true"></i>
+            <span class="sr-only">GitHub</span>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="nav-item" aria-label="Connect with CoreSync on LinkedIn" target="_blank" rel="noopener noreferrer">
+            <i class="bx bxl-linkedin" aria-hidden="true"></i>
+            <span class="sr-only">LinkedIn</span>
+          </a>
+        </li>
+        
+      </ul>
+    </div>
+
+  </div>
+  
+  <!-- Bottom Notice -->
+  <div class="footer-bottom" aria-label="Copyright Notice">
+    <p>
+      &copy; 2025 Aventrix. Designed and developed by
+      <a href="#" target="_blank" rel="noopener noreferrer"><strong>Grace</strong></a>
+    </p>
+  </div>
+</footer>
+<button id="backToTop" aria-label="back to top" aria-hidden="true"><i class='bx bx-chevron-up'></i></button>
+
+<script src="app.js"></script>
+</body>
+
+
+</html>
