@@ -1187,7 +1187,7 @@ color: var(--dark-mode-text-md);
 @media(max-width:765px){
 .top-header{
 width:100%;
-justify-content:space-between;
+justify-content:center;
 }
 .sr-only{
 display:none;
