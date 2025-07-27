@@ -277,7 +277,7 @@ header, main, footer{
     padding: 1rem 3rem;
     gap: 2rem;
     justify-content: space-between;
-    overflow-x: hidden;
+    
 
     
 }
@@ -1184,8 +1184,9 @@ color: var(--dark-mode-text-md);
 
 
 @media(max-width:765px){
-.toggle-menu:hover span{
-    display: none;
+.top-header{
+width:100%;
+justify-content:space-between;
 }
 .sr-only{
 display:none;
@@ -1218,9 +1219,7 @@ display:none;
     cursor: pointer;
     background-color: transparent;
 }
-.toggle-menu:hover span{
-    display: block;
-}
+
 .welcome-message{
     width: 98%;
 }
