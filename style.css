@@ -1187,6 +1187,9 @@ color: var(--dark-mode-text-md);
 .toggle-menu:hover span{
     display: none;
 }
+.sr-only{
+display:none;
+}
     .side-bar{
         transform: translateX(-100%);
         transition: transform .4s ease;
