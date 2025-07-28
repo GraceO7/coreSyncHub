@@ -14,7 +14,7 @@ closeMenu.addEventListener('click', () => {
   sidebar.classList.add('closing');
 });
 
-// ✅ MOVE nav-link listener OUTSIDE closeMenu (Fixes bug)
+//close sidebar when the nav-links are click 
 const navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach((nav) => {
   nav.addEventListener('click', () => {
